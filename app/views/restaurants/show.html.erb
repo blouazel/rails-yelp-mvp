@@ -12,8 +12,16 @@
   <strong>Category</strong>
   <%= @restaurant.category %>
 </p>
-<p>
 
+<p>
   <strong>Phone number</strong>
   <%= @restaurant.phone_number %>
 </p>
+
+<p>
+  <strong>Review</strong>
+  <%= @restaurant.reviews %>
+</p>
+
+<%= link_to 'Back', restaurants_path %> |
+<%= link_to "Add a review", new_restaurant_review_path(@restaurant) %>
